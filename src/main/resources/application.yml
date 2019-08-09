@@ -18,7 +18,7 @@ security:
       userInfoUri: BUGFIX
     client:
       clientId: ${CLIENT_ID}
-        clientSecret: ${CLIENT_SECRET}
+      clientSecret: ${CLIENT_SECRET}
       accessTokenUri: https://www.strava.com/oauth/token
       userAuthorizationUri: https://www.strava.com/oauth/authorize?response_type=code;scope=read
       clientAuthenticationScheme: form
