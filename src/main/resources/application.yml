@@ -21,6 +21,6 @@ security:
       clientId: ${CLIENT_ID}
       clientSecret: ${CLIENT_SECRET}
       accessTokenUri: https://www.strava.com/oauth/token
-      userAuthorizationUri: https://www.strava.com/oauth/authorize?client_id=36668&redirect_uri=http://localhost:8080/authenticate&response_type=code&scope=read
+      userAuthorizationUri: https://www.strava.com/oauth/authorize?response_type=code;scope=read
       clientAuthenticationScheme: form
 
