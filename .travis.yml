@@ -1,0 +1,8 @@
+language: java
+deploy:
+    provider: heroku
+    app: medvind-backend
+    api_key:
+        secure: $HEROKU_API_KEY
+    on:
+        repo: KrokusMorning/medvind-backend
