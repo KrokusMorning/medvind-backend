@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Collection;
 
 public class Segment implements Serializable {
 
@@ -39,6 +40,8 @@ public class Segment implements Serializable {
     private PolylineMap map;
     @JsonProperty(value = "athlete_count")
     private int athlete_count;
+
+    private Collection<WeatherPoint> weatherPoints;
 
     public long getId() {
         return id;
@@ -166,5 +169,13 @@ public class Segment implements Serializable {
 
     public void setAthlete_count(int athlete_count) {
         this.athlete_count = athlete_count;
+    }
+
+    public Collection<WeatherPoint> getWeatherPoints() {
+        return weatherPoints;
+    }
+
+    public void setWeatherPoints(Collection<WeatherPoint> weatherPoints) {
+        this.weatherPoints = weatherPoints;
     }
 }
