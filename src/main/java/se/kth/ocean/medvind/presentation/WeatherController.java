@@ -16,9 +16,16 @@ import java.util.Collection;
 import java.util.Date;
 import java.util.Iterator;
 
+/**
+ * Handles communication with SMHI API.
+ */
 @RestController
 public class WeatherController {
 
+    /**
+     * Takes a segment and fetches the weather reports associated with the location of the segment and stores them in weatherPoints.
+     * @param segment, segment that is to be updated.
+     */
     public void setWeather (Segment segment){
 
         RestTemplate restTemplate = new RestTemplate();

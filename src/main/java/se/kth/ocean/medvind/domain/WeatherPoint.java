@@ -10,6 +10,11 @@ public class WeatherPoint {
     private Double ws;
     private Double pMin;
     private Double pMax;
+    private int directionMatch;
+    private double rating;
+
+
+
 
     public Date getTime() {
         return time;
@@ -57,5 +62,21 @@ public class WeatherPoint {
 
     public void setpMax(Double pMax) {
         this.pMax = pMax;
+    }
+
+    public int getDirectionMatch() {
+        return directionMatch;
+    }
+
+    public void setDirectionMatch(int directionMatch) {
+        this.directionMatch = directionMatch;
+    }
+
+    public double getRating() {
+        return rating;
+    }
+
+    public void setRating(double rating) {
+        this.rating = rating;
     }
 }

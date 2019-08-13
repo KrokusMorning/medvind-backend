@@ -42,6 +42,8 @@ public class Segment implements Serializable {
     private int athlete_count;
 
     private Collection<WeatherPoint> weatherPoints;
+    private int directionDegrees;
+    private float startToEndDistance;
 
     public long getId() {
         return id;
@@ -178,4 +180,26 @@ public class Segment implements Serializable {
     public void setWeatherPoints(Collection<WeatherPoint> weatherPoints) {
         this.weatherPoints = weatherPoints;
     }
+
+    public int getDirectionDegrees() {
+        return directionDegrees;
+    }
+
+    public void setDirectionDegrees(int directionDegrees) {
+        this.directionDegrees = directionDegrees;
+    }
+
+    public float getStartToEndDistance() {
+        return startToEndDistance;
+    }
+
+    public void setStartToEndDistance(float startToEndDistance) {
+        this.startToEndDistance = startToEndDistance;
+    }
+
+    public double getBestWeatherPointMatch(){
+        return weatherPoints.iterator().next().getRating();
+    }
+
+
 }
