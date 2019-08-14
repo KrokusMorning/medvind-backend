@@ -4,6 +4,7 @@ package se.kth.ocean.medvind.presentation;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 import se.kth.ocean.medvind.domain.Segment;
@@ -19,7 +20,7 @@ import java.util.Iterator;
 /**
  * Handles communication with SMHI API.
  */
-@RestController
+@Controller
 public class WeatherController {
 
     /**

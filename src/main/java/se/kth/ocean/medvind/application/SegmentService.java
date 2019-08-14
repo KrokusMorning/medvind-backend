@@ -91,7 +91,7 @@ public class SegmentService {
 
     /**
      * Iterates trough all weatherpoints of a segment and updates weatherpoint metadata
-     * @param segment
+     * @param segment segment with weatherPoints to be updated.
      */
     private void setWeatherPointsMetaData(Segment segment){
         for(WeatherPoint weatherPoint : segment.getWeatherPoints()){
@@ -128,7 +128,7 @@ public class SegmentService {
      * Calculates distance between two angles
      * @param alpha angle one
      * @param beta angle two
-     * @return, angle distance
+     * @return angle distance
      */
     private static int angleDistance(int alpha, int beta) {
         int phi = Math.abs(beta - alpha) % 360;
